@@ -1,0 +1,1 @@
+# will practice good question kuch aisa nahi h jo nahut kathin h
