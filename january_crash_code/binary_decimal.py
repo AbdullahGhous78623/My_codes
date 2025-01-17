@@ -19,6 +19,59 @@
 # print(decimal_num)
 
 
-print(bin(12))
+# print(bin(12))
 
+# # Binary to Decimal
+# def binary_to_decimal(binary_string):
+#     return int(binary_string, 2)
+
+# # Binary to Octal
+# def binary_to_octal(binary_string):
+#     decimal = int(binary_string, 2)
+#     return oct(decimal)[2:]
+
+# # Binary to Hexadecimal
+# def binary_to_hexadecimal(binary_string):
+#     decimal = int(binary_string, 2)
+#     return hex(decimal)[2:]
+
+# # Octal to Decimal
+# def octal_to_decimal(octal_string):
+#     return int(octal_string, 8)
+
+# # Octal to Binary
+# def octal_to_binary(octal_string):
+#     decimal = int(octal_string, 8)
+#     return bin(decimal)[2:]
+
+# # Octal to Hexadecimal
+# def octal_to_hexadecimal(octal_string):
+#     decimal = int(octal_string, 8)
+#     return hex(decimal)[2:]
+
+# # Decimal to Binary
+# def decimal_to_binary(number):
+#     return bin(number)[2:]
+
+# # Decimal to Octal
+# def decimal_to_octal(number):
+#     return oct(number)[2:]
+
+# # Decimal to Hexadecimal
+# def decimal_to_hexadecimal(number):
+#     return hex(number)[2:]
+
+# # Hexadecimal to Decimal
+# def hexadecimal_to_decimal(hex_string):
+#     return int(hex_string, 16)
+
+# # Hexadecimal to Binary
+# def hexadecimal_to_binary(hex_string):
+#     decimal = int(hex_string, 16)
+#     return bin(decimal)[2:]
+
+# # Hexadecimal to Octal
+# def hexadecimal_to_octal(hex_string):
+#     decimal = int(hex_string, 16)
+#     return oct(decimal)[2:]
 
