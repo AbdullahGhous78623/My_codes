@@ -50,10 +50,53 @@ class LinkedList:
     def clear(self):
         self.head=None
         self.n=0
+    def delete_head(self):
+        if self.head==None:
+            return "Empty LL"
+        self.head=self.head.next
+        self.n-=1
+    def pop(self):
+        if self.head==None:
+            return "Empty LL"
+        reference=self.head
+        if reference.next==None:
+            return self.delete_head()
+
+
+        while reference.next.next!=None:
+            
+                
+            reference=reference.next
+        reference.next=None
+        self.n-=1
+
+    def delete_nth(self,n):
+        if self.head==None:
+            return "Empty LL"
+        reference=self.head
+        if reference.data==n:
+            self.head=self.head.next
+            self.n-=1
+            return
+        while reference.next!=None:
+            if reference.next.data==n:
+                reference.next=reference.next.next
+                self.n-=1
+                return
+            reference=reference.next
+        return "Item not found"
+        
+        
 
 
 L=LinkedList()
-L.insert_middle(8,12)
+# L.insert_head(2)
+# L.insert_head(4)
+
+
+print(L.delete_nth(4))
+print(L)
+
 
 
     
