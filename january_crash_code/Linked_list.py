@@ -85,17 +85,32 @@ class LinkedList:
                 return
             reference=reference.next
         return "Item not found"
-        
-        
-
-
+    def search(self,value):
+        reference=self.head
+        count=0
+        while reference!=None:
+            if reference.data==value:
+                return f"{value} found at index {count}"
+            reference=reference.next
+            count+=1
+        if reference==None:
+            return f"{value} not found"
+    def __getitem__(self,index):
+        reference=self.head
+        pos=0
+        while reference!=None:
+            if pos==index:
+                return reference.data
+            pos+=1
+            reference=reference.next
+        return "Index Error"
 L=LinkedList()
-# L.insert_head(2)
-# L.insert_head(4)
+L.insert_head(2)
+L.insert_head(4)
+
+print(L[4])
 
 
-print(L.delete_nth(4))
-print(L)
 
 
 
